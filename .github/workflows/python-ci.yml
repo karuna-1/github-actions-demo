@@ -18,5 +18,11 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Check Python Version
+        run: python --version
+
+      - name: List Repository Files
+        run: ls -la
+
       - name: Run Python Script
         run: python app.py
